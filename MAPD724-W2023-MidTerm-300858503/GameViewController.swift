@@ -3,7 +3,7 @@
 //  MAPD724-W2023-MidTerm-300858503
 //
 //  Created by Samuel Sum on 2023-02-27.
-//
+//  Version 1
 
 import UIKit
 import SpriteKit
@@ -28,6 +28,15 @@ class GameViewController: UIViewController {
         presentStartScene()
         
         CollisionManager.gameViewController = self
+        
+        //ask the system to start notifying when interface change
+        UIDevice.current.beginGeneratingDeviceOrientationNotifications()
+        //add the observer
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(orientationChanged(notification:)),
+            name: UIDevice.orientationDidChangeNotification,
+            object: nil)
     }
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask
@@ -128,5 +137,15 @@ class GameViewController: UIViewController {
         
     }
     
-    
+    @objc func orientationChanged(notification : NSNotification) {
+        if (ScoreManager.isPlaying) {
+            //force landscape mode
+            DispatchQueue.main.async {
+                //OrientationManager.landscapeSupported = !OrientationManager.landscapeSupported
+                let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                windowScene?.requestGeometryUpdate(.iOS(interfaceOrientations:  .landscape ))
+                self.setNeedsUpdateOfSupportedInterfaceOrientations()
+            }
+        }
+    }
 }

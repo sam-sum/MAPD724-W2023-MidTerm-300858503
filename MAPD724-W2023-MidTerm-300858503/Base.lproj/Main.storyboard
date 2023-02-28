@@ -67,9 +67,9 @@ Mail Pilot</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 99999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6A-qK-mBf">
-                                <rect key="frame" x="560" y="59.000000000000007" width="193" height="25.333333333333336"/>
+                                <rect key="frame" x="560" y="59.000000000000007" width="270" height="25.333333333333336"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="193" id="mkH-lL-4lz"/>
+                                    <constraint firstAttribute="width" constant="270" id="mkH-lL-4lz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="24"/>
                                 <color key="textColor" systemColor="systemYellowColor"/>
@@ -98,7 +98,7 @@ Mail Pilot</string>
                             <constraint firstItem="VxX-nt-gIZ" firstAttribute="top" secondItem="5lm-X3-RjI" secondAttribute="bottom" constant="39" id="0lG-lU-0Sh"/>
                             <constraint firstItem="5lm-X3-RjI" firstAttribute="centerX" secondItem="6m0-4P-0lY" secondAttribute="centerX" id="1QH-24-N3Y"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="6m0-4P-0lY" secondAttribute="bottom" constant="113" id="1wo-CD-3E0"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="y6A-qK-mBf" secondAttribute="trailing" constant="179" id="5v6-f6-Q1N"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="y6A-qK-mBf" secondAttribute="trailing" constant="102" id="5v6-f6-Q1N"/>
                             <constraint firstItem="f3O-ZU-SGm" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="8N4-ao-a0z"/>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="Hae-Fw-cg7" secondAttribute="bottom" constant="72.666666666666686" id="9MF-nL-ppD"/>
                             <constraint firstItem="f3O-ZU-SGm" firstAttribute="baseline" secondItem="y6A-qK-mBf" secondAttribute="baseline" id="Ah1-pC-lQc"/>
@@ -135,6 +135,10 @@ Mail Pilot</string>
                                 <exclude reference="1wo-CD-3E0"/>
                                 <exclude reference="5v6-f6-Q1N"/>
                                 <exclude reference="9MF-nL-ppD"/>
+                                <exclude reference="1QH-24-N3Y"/>
+                                <exclude reference="QvR-0j-79Z"/>
+                                <exclude reference="Z2J-k7-TwI"/>
+                                <exclude reference="d92-mf-HES"/>
                                 <exclude reference="8N4-ao-a0z"/>
                                 <exclude reference="Ah1-pC-lQc"/>
                                 <exclude reference="WOg-GQ-1bZ"/>
@@ -142,18 +146,10 @@ Mail Pilot</string>
                                 <exclude reference="f13-07-nkv"/>
                                 <exclude reference="ier-9d-xiw"/>
                                 <exclude reference="rdW-B1-LNR"/>
-                                <exclude reference="1QH-24-N3Y"/>
-                                <exclude reference="QvR-0j-79Z"/>
-                                <exclude reference="Z2J-k7-TwI"/>
-                                <exclude reference="d92-mf-HES"/>
                                 <exclude reference="GM5-rD-Snx"/>
                                 <exclude reference="dEa-Dn-HxF"/>
                                 <exclude reference="jBZ-UL-dir"/>
                                 <exclude reference="zDo-jQ-CK8"/>
-                                <exclude reference="JXo-po-6tp"/>
-                                <exclude reference="aau-26-37D"/>
-                                <exclude reference="kTM-Mp-7gB"/>
-                                <exclude reference="rWU-tc-zJl"/>
                                 <exclude reference="IVn-7u-0cQ"/>
                                 <exclude reference="U3F-K2-gjH"/>
                                 <exclude reference="fqm-2f-BSK"/>
@@ -164,6 +160,10 @@ Mail Pilot</string>
                                 <exclude reference="YEp-Gc-6HX"/>
                                 <exclude reference="apO-6o-DY3"/>
                                 <exclude reference="srT-au-sXC"/>
+                                <exclude reference="JXo-po-6tp"/>
+                                <exclude reference="aau-26-37D"/>
+                                <exclude reference="kTM-Mp-7gB"/>
+                                <exclude reference="rWU-tc-zJl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -171,23 +171,23 @@ Mail Pilot</string>
                                 <include reference="1wo-CD-3E0"/>
                                 <include reference="5v6-f6-Q1N"/>
                                 <include reference="9MF-nL-ppD"/>
-                                <include reference="8N4-ao-a0z"/>
-                                <include reference="XcB-EL-Y2R"/>
-                                <include reference="f13-07-nkv"/>
-                                <include reference="rdW-B1-LNR"/>
                                 <include reference="1QH-24-N3Y"/>
                                 <include reference="QvR-0j-79Z"/>
                                 <include reference="Z2J-k7-TwI"/>
                                 <include reference="d92-mf-HES"/>
+                                <include reference="8N4-ao-a0z"/>
+                                <include reference="XcB-EL-Y2R"/>
+                                <include reference="f13-07-nkv"/>
+                                <include reference="rdW-B1-LNR"/>
                                 <include reference="dEa-Dn-HxF"/>
                                 <include reference="jBZ-UL-dir"/>
                                 <include reference="zDo-jQ-CK8"/>
-                                <include reference="aau-26-37D"/>
-                                <include reference="kTM-Mp-7gB"/>
-                                <include reference="rWU-tc-zJl"/>
                                 <include reference="IVn-7u-0cQ"/>
                                 <include reference="DOd-bE-Dd1"/>
                                 <include reference="YEp-Gc-6HX"/>
+                                <include reference="aau-26-37D"/>
+                                <include reference="kTM-Mp-7gB"/>
+                                <include reference="rWU-tc-zJl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -197,7 +197,6 @@ Mail Pilot</string>
                                 <include reference="WOg-GQ-1bZ"/>
                                 <include reference="ier-9d-xiw"/>
                                 <include reference="GM5-rD-Snx"/>
-                                <include reference="JXo-po-6tp"/>
                                 <include reference="U3F-K2-gjH"/>
                                 <include reference="fqm-2f-BSK"/>
                                 <include reference="hQ8-gg-5Xx"/>
@@ -205,6 +204,7 @@ Mail Pilot</string>
                                 <include reference="0lG-lU-0Sh"/>
                                 <include reference="apO-6o-DY3"/>
                                 <include reference="srT-au-sXC"/>
+                                <include reference="JXo-po-6tp"/>
                             </mask>
                         </variation>
                     </view>
@@ -219,7 +219,7 @@ Mail Pilot</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-774.41860465116281" y="-34.120171673819748"/>
+            <point key="canvasLocation" x="-774.4635193133048" y="-34.883720930232556"/>
         </scene>
     </scenes>
     <resources>

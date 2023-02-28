@@ -3,7 +3,7 @@
 //  MAPD724-W2023-MidTerm-300858503
 //
 //  Created by Samuel Sum on 2023-02-27.
-//
+//  Version 1
 
 import SpriteKit
 import GameplayKit
@@ -58,8 +58,6 @@ class GameScene: SKScene
         engineSound.autoplayLooped = true
         engineSound.run(SKAction.changeVolume(to: 0.5, duration: 0))
 
-        
-        
         // preload / prewarm impulse sounds
         do
         {
