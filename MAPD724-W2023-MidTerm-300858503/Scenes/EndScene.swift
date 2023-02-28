@@ -20,6 +20,9 @@ class EndScene: SKScene
     {
         name = "END"
         
+        //set game playing flag for force orientation
+        ScoreManager.isPlaying = false
+        
         // add the first ocean to the Scene
         ocean1 = Ocean()
         ocean1?.Reset()

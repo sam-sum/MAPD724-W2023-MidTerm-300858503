@@ -30,7 +30,7 @@ class CollisionManager
         let P1Radius = object1.halfHeight!
         let P2Radius = object2.halfHeight!
         let Radii = P1Radius + P2Radius
-        
+
         // the collision check - overlapping circles
         if(SquaredDistance(point1: P1, point2: P2) < Radii * Radii)
         {
@@ -40,7 +40,7 @@ class CollisionManager
                 // if object2 is not already colliding
                 switch(object2.name)
                 {
-                case "island":
+                case "l_island":
                     ScoreManager.Score += 100
                     gameViewController?.updateScoreLabel()
                     scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
@@ -50,7 +50,7 @@ class CollisionManager
                         gameViewController?.updateLivesLabel()
                     }
                     break
-                case "cloud":
+                case "l_cloud":
                     ScoreManager.Lives -= 1
                     gameViewController?.updateLivesLabel()
                     scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))

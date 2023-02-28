@@ -51,9 +51,13 @@
 		067756D629AD8F0F00B8F009 /* l_plane2.png in Resources */ = {isa = PBXBuildFile; fileRef = 067756CF29AD8F0F00B8F009 /* l_plane2.png */; };
 		067756D729AD8F0F00B8F009 /* l_ocean.png in Resources */ = {isa = PBXBuildFile; fileRef = 067756D029AD8F0F00B8F009 /* l_ocean.png */; };
 		067756D829AD8F0F00B8F009 /* l_island.png in Resources */ = {isa = PBXBuildFile; fileRef = 067756D129AD8F0F00B8F009 /* l_island.png */; };
-		067756D929AD8F0F00B8F009 /* l_plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 067756D229AD8F0F00B8F009 /* l_plane.png */; };
 		067756DA29AD8F0F00B8F009 /* l_plane3.png in Resources */ = {isa = PBXBuildFile; fileRef = 067756D329AD8F0F00B8F009 /* l_plane3.png */; };
 		067756DB29AD8F0F00B8F009 /* l_cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 067756D429AD8F0F00B8F009 /* l_cloud.png */; };
+		06AB3DF229ADF6F300F9509C /* LandscapeOcean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB3DF129ADF6F300F9509C /* LandscapeOcean.swift */; };
+		06AB3DF429ADF88900F9509C /* LandscapeIsland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB3DF329ADF88900F9509C /* LandscapeIsland.swift */; };
+		06AB3DF629ADF9ED00F9509C /* LandscapeCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB3DF529ADF9ED00F9509C /* LandscapeCloud.swift */; };
+		06AB3DF829ADFBDA00F9509C /* LandscapePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AB3DF729ADFBDA00F9509C /* LandscapePlayer.swift */; };
+		06AB3DFC29ADFD7100F9509C /* l_plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 06AB3DFB29ADFD7100F9509C /* l_plane.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,9 +107,13 @@
 		067756CF29AD8F0F00B8F009 /* l_plane2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l_plane2.png; sourceTree = "<group>"; };
 		067756D029AD8F0F00B8F009 /* l_ocean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l_ocean.png; sourceTree = "<group>"; };
 		067756D129AD8F0F00B8F009 /* l_island.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l_island.png; sourceTree = "<group>"; };
-		067756D229AD8F0F00B8F009 /* l_plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l_plane.png; sourceTree = "<group>"; };
 		067756D329AD8F0F00B8F009 /* l_plane3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l_plane3.png; sourceTree = "<group>"; };
 		067756D429AD8F0F00B8F009 /* l_cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l_cloud.png; sourceTree = "<group>"; };
+		06AB3DF129ADF6F300F9509C /* LandscapeOcean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeOcean.swift; sourceTree = "<group>"; };
+		06AB3DF329ADF88900F9509C /* LandscapeIsland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeIsland.swift; sourceTree = "<group>"; };
+		06AB3DF529ADF9ED00F9509C /* LandscapeCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeCloud.swift; sourceTree = "<group>"; };
+		06AB3DF729ADFBDA00F9509C /* LandscapePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapePlayer.swift; sourceTree = "<group>"; };
+		06AB3DFB29ADFD7100F9509C /* l_plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l_plane.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +212,7 @@
 				067756D429AD8F0F00B8F009 /* l_cloud.png */,
 				067756D129AD8F0F00B8F009 /* l_island.png */,
 				067756D029AD8F0F00B8F009 /* l_ocean.png */,
-				067756D229AD8F0F00B8F009 /* l_plane.png */,
+				06AB3DFB29ADFD7100F9509C /* l_plane.png */,
 				067756CE29AD8F0F00B8F009 /* l_plane1.png */,
 				067756CF29AD8F0F00B8F009 /* l_plane2.png */,
 				067756D329AD8F0F00B8F009 /* l_plane3.png */,
@@ -231,6 +239,10 @@
 				0675FB3129AD7C2700664B85 /* Cloud.swift */,
 				0675FB3329AD7C3A00664B85 /* Ocean.swift */,
 				0675FB3529AD7C5000664B85 /* Player.swift */,
+				06AB3DF129ADF6F300F9509C /* LandscapeOcean.swift */,
+				06AB3DF329ADF88900F9509C /* LandscapeIsland.swift */,
+				06AB3DF529ADF9ED00F9509C /* LandscapeCloud.swift */,
+				06AB3DF729ADFBDA00F9509C /* LandscapePlayer.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -322,6 +334,7 @@
 				0675FB1529AD7B5500664B85 /* thunder.ogg in Resources */,
 				0675FB2129AD7B5500664B85 /* island.png in Resources */,
 				0675FB1729AD7B5500664B85 /* engine.ogg in Resources */,
+				06AB3DFC29ADFD7100F9509C /* l_plane.png in Resources */,
 				0675FB3E29AD7E8A00664B85 /* EndScene.sks in Resources */,
 				0675FB3A29AD7E3900664B85 /* StartScene.sks in Resources */,
 				067756DB29AD8F0F00B8F009 /* l_cloud.png in Resources */,
@@ -338,7 +351,6 @@
 				0675FB1C29AD7B5500664B85 /* plane3.png in Resources */,
 				0675FB1829AD7B5500664B85 /* engine.mp3 in Resources */,
 				0675FB2329AD7B5500664B85 /* cloud.png in Resources */,
-				067756D929AD8F0F00B8F009 /* l_plane.png in Resources */,
 				0675FAEC29AD79F100664B85 /* Actions.sks in Resources */,
 				0675FB2229AD7B5500664B85 /* ocean.gif in Resources */,
 				0675FB1F29AD7B5500664B85 /* backButton.png in Resources */,
@@ -361,13 +373,17 @@
 				0675FB2E29AD7BEB00664B85 /* GameObject.swift in Sources */,
 				0675FB3029AD7C0300664B85 /* Layer.swift in Sources */,
 				0675FB3429AD7C3A00664B85 /* Ocean.swift in Sources */,
+				06AB3DF429ADF88900F9509C /* LandscapeIsland.swift in Sources */,
 				0675FAF029AD79F100664B85 /* GameViewController.swift in Sources */,
 				0675FB3C29AD7E7100664B85 /* EndScene.swift in Sources */,
 				0675FB3229AD7C2700664B85 /* Cloud.swift in Sources */,
+				06AB3DF229ADF6F300F9509C /* LandscapeOcean.swift in Sources */,
 				0675FB2929AD7B8100664B85 /* Island.swift in Sources */,
 				0675FB3629AD7C5000664B85 /* Player.swift in Sources */,
 				0675FB4129AD7ECF00664B85 /* ScoreManager.swift in Sources */,
+				06AB3DF829ADFBDA00F9509C /* LandscapePlayer.swift in Sources */,
 				0675FAE829AD79F100664B85 /* AppDelegate.swift in Sources */,
+				06AB3DF629ADF9ED00F9509C /* LandscapeCloud.swift in Sources */,
 				0675FB3829AD7DEB00664B85 /* StartScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

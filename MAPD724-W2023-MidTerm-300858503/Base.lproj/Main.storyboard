@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,11 +18,11 @@
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MAPD724_W2023_MidTerm_300858503" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="932" height="430"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m0-4P-0lY">
-                                <rect key="frame" x="1.6666666666666572" y="224.33333333333337" width="427" height="191"/>
+                                <rect key="frame" x="252.66666666666663" y="92" width="427" height="191"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="191" id="0bN-u6-wvd"/>
                                     <constraint firstAttribute="width" constant="427" id="U0M-VY-s25"/>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lm-X3-RjI">
-                                <rect key="frame" x="25" y="216" width="380" height="191"/>
+                                <rect key="frame" x="10" y="83" width="912" height="191"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="191" id="AEU-3P-OvT"/>
                                 </constraints>
@@ -43,7 +43,7 @@ Mail Pilot</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-Fw-cg7">
-                                <rect key="frame" x="113" y="446" width="202" height="64.333333333333314"/>
+                                <rect key="frame" x="365" y="259" width="202" height="64.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64.333333333333329" id="4zo-6z-LQp"/>
                                     <constraint firstAttribute="width" constant="202" id="OXF-06-W0E"/>
@@ -58,7 +58,7 @@ Mail Pilot</string>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3O-ZU-SGm">
-                                <rect key="frame" x="43" y="59.000000000000007" width="145" height="25.333333333333336"/>
+                                <rect key="frame" x="216" y="59.000000000000007" width="145" height="25.333333333333336"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="l75-ib-rIN"/>
                                 </constraints>
@@ -67,7 +67,7 @@ Mail Pilot</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 99999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6A-qK-mBf">
-                                <rect key="frame" x="247" y="59.000000000000007" width="193" height="25.333333333333336"/>
+                                <rect key="frame" x="560" y="59.000000000000007" width="193" height="25.333333333333336"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="193" id="mkH-lL-4lz"/>
                                 </constraints>
@@ -76,7 +76,7 @@ Mail Pilot</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxX-nt-gIZ">
-                                <rect key="frame" x="133" y="446" width="165" height="64"/>
+                                <rect key="frame" x="385.66666666666669" y="282" width="165.00000000000006" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="DTT-Vn-nbj"/>
                                     <constraint firstAttribute="height" constant="64" id="OwB-hR-dix"/>
