@@ -16,28 +16,23 @@
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MAPD724_W2023_ICE_4B" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MAPD724_W2023_MidTerm_300858503" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3O-ZU-SGm">
-                                <rect key="frame" x="20" y="59" width="145" height="25"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m0-4P-0lY">
+                                <rect key="frame" x="1.6666666666666572" y="224.33333333333337" width="427" height="191"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="145" id="yMv-Vz-jaS"/>
+                                    <constraint firstAttribute="height" constant="191" id="0bN-u6-wvd"/>
+                                    <constraint firstAttribute="width" constant="427" id="U0M-VY-s25"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="24"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 99999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6A-qK-mBf">
-                                <rect key="frame" x="217" y="59" width="193" height="25"/>
-                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="70"/>
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lm-X3-RjI">
-                                <rect key="frame" x="20" y="215" width="390" height="191"/>
+                                <rect key="frame" x="25" y="216" width="380" height="191"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="191" id="AEU-3P-OvT"/>
                                 </constraints>
@@ -47,28 +42,12 @@ Mail Pilot</string>
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxX-nt-gIZ">
-                                <rect key="frame" x="142" y="445" width="150" height="65"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Start">
-                                    <fontDescription key="titleFontDescription" name="Dock51" family="Dock 51" pointSize="48"/>
-                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="TsJ-7y-AiO"/>
-                                </connections>
-                            </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m0-4P-0lY">
-                                <rect key="frame" x="20" y="215" width="390" height="191"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="191" id="LAq-42-HOY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="70"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hae-Fw-cg7">
-                                <rect key="frame" x="116" y="445" width="202" height="65"/>
+                                <rect key="frame" x="113" y="446" width="202" height="64.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64.333333333333329" id="4zo-6z-LQp"/>
+                                    <constraint firstAttribute="width" constant="202" id="OXF-06-W0E"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Restart">
                                     <fontDescription key="titleFontDescription" name="Dock51" family="Dock 51" pointSize="48"/>
@@ -78,26 +57,156 @@ Mail Pilot</string>
                                     <action selector="RestartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="yhd-j5-6yT"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lives: 99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3O-ZU-SGm">
+                                <rect key="frame" x="43" y="59.000000000000007" width="145" height="25.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="l75-ib-rIN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="24"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 99999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6A-qK-mBf">
+                                <rect key="frame" x="247" y="59.000000000000007" width="193" height="25.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="mkH-lL-4lz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="24"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxX-nt-gIZ">
+                                <rect key="frame" x="133" y="446" width="165" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="DTT-Vn-nbj"/>
+                                    <constraint firstAttribute="height" constant="64" id="OwB-hR-dix"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start">
+                                    <fontDescription key="titleFontDescription" name="Dock51" family="Dock 51" pointSize="48"/>
+                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="TsJ-7y-AiO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="VxX-nt-gIZ" secondAttribute="bottom" constant="388" id="0DY-Sf-E8f"/>
                             <constraint firstItem="VxX-nt-gIZ" firstAttribute="top" secondItem="5lm-X3-RjI" secondAttribute="bottom" constant="39" id="0lG-lU-0Sh"/>
-                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="baseline" secondItem="y6A-qK-mBf" secondAttribute="baseline" id="4Ix-wI-AX9"/>
-                            <constraint firstItem="6m0-4P-0lY" firstAttribute="trailing" secondItem="5lm-X3-RjI" secondAttribute="trailing" id="IW2-6x-Jbu"/>
-                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="leading" secondItem="5lm-X3-RjI" secondAttribute="leading" id="KQK-Ef-iKf"/>
+                            <constraint firstItem="5lm-X3-RjI" firstAttribute="centerX" secondItem="6m0-4P-0lY" secondAttribute="centerX" id="1QH-24-N3Y"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="6m0-4P-0lY" secondAttribute="bottom" constant="113" id="1wo-CD-3E0"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="y6A-qK-mBf" secondAttribute="trailing" constant="179" id="5v6-f6-Q1N"/>
+                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="8N4-ao-a0z"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="Hae-Fw-cg7" secondAttribute="bottom" constant="72.666666666666686" id="9MF-nL-ppD"/>
+                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="baseline" secondItem="y6A-qK-mBf" secondAttribute="baseline" id="Ah1-pC-lQc"/>
+                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="top" secondItem="5lm-X3-RjI" secondAttribute="bottom" constant="8" id="DOd-bE-Dd1"/>
+                            <constraint firstItem="6m0-4P-0lY" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="GM5-rD-Snx"/>
+                            <constraint firstItem="Hae-Fw-cg7" firstAttribute="centerX" secondItem="6m0-4P-0lY" secondAttribute="centerX" id="IVn-7u-0cQ"/>
+                            <constraint firstItem="y6A-qK-mBf" firstAttribute="leading" secondItem="f3O-ZU-SGm" secondAttribute="trailing" constant="59" id="JXo-po-6tp"/>
+                            <constraint firstItem="5lm-X3-RjI" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="10" id="QvR-0j-79Z"/>
                             <constraint firstItem="Hae-Fw-cg7" firstAttribute="baseline" secondItem="VxX-nt-gIZ" secondAttribute="baseline" id="U3F-K2-gjH"/>
-                            <constraint firstItem="y6A-qK-mBf" firstAttribute="leading" secondItem="f3O-ZU-SGm" secondAttribute="trailing" constant="52" id="Vxc-Ig-E5g"/>
-                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="btR-tJ-Szk"/>
-                            <constraint firstItem="6m0-4P-0lY" firstAttribute="leading" secondItem="5lm-X3-RjI" secondAttribute="leading" id="eYf-ah-HC7"/>
-                            <constraint firstItem="Hae-Fw-cg7" firstAttribute="centerX" secondItem="VxX-nt-gIZ" secondAttribute="centerX" id="fqm-2f-BSK"/>
-                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="k5j-wy-7OR"/>
-                            <constraint firstItem="y6A-qK-mBf" firstAttribute="trailing" secondItem="5lm-X3-RjI" secondAttribute="trailing" id="qz6-Z2-MAN"/>
-                            <constraint firstItem="y6A-qK-mBf" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="r1V-YJ-9DS"/>
-                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="142" id="srT-au-sXC"/>
-                            <constraint firstItem="6m0-4P-0lY" firstAttribute="top" secondItem="5lm-X3-RjI" secondAttribute="top" id="zRl-57-ivR"/>
+                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="WOg-GQ-1bZ"/>
+                            <constraint firstItem="5lm-X3-RjI" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="X3E-kJ-p6v"/>
+                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="216" id="XcB-EL-Y2R"/>
+                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="centerX" secondItem="Hae-Fw-cg7" secondAttribute="centerX" constant="2" id="YEp-Gc-6HX"/>
+                            <constraint firstItem="5lm-X3-RjI" firstAttribute="centerX" secondItem="Hae-Fw-cg7" secondAttribute="centerX" id="Z2J-k7-TwI"/>
+                            <constraint firstItem="y6A-qK-mBf" firstAttribute="baseline" secondItem="f3O-ZU-SGm" secondAttribute="baseline" id="aau-26-37D"/>
+                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="top" secondItem="6m0-4P-0lY" secondAttribute="bottom" constant="30.666666666666742" id="apO-6o-DY3"/>
+                            <constraint firstItem="5lm-X3-RjI" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="24" id="d92-mf-HES"/>
+                            <constraint firstItem="6m0-4P-0lY" firstAttribute="centerX" secondItem="Hae-Fw-cg7" secondAttribute="centerX" id="dEa-Dn-HxF"/>
+                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="216" id="f13-07-nkv"/>
+                            <constraint firstItem="Hae-Fw-cg7" firstAttribute="centerX" secondItem="VxX-nt-gIZ" secondAttribute="centerX" constant="-1.6666666666666856" id="fqm-2f-BSK"/>
+                            <constraint firstItem="Hae-Fw-cg7" firstAttribute="top" secondItem="6m0-4P-0lY" secondAttribute="bottom" constant="30.666666666666742" id="hQ8-gg-5Xx"/>
+                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="43" id="ier-9d-xiw"/>
+                            <constraint firstItem="Hae-Fw-cg7" firstAttribute="top" secondItem="5lm-X3-RjI" secondAttribute="bottom" constant="39.000000000000114" id="iy1-J4-a2w"/>
+                            <constraint firstItem="6m0-4P-0lY" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="jBZ-UL-dir"/>
+                            <constraint firstItem="y6A-qK-mBf" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" id="kTM-Mp-7gB"/>
+                            <constraint firstItem="y6A-qK-mBf" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" constant="560" id="rWU-tc-zJl"/>
+                            <constraint firstItem="f3O-ZU-SGm" firstAttribute="baseline" secondItem="y6A-qK-mBf" secondAttribute="baseline" id="rdW-B1-LNR"/>
+                            <constraint firstItem="VxX-nt-gIZ" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="133" id="srT-au-sXC"/>
+                            <constraint firstItem="6m0-4P-0lY" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="33" id="zDo-jQ-CK8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0DY-Sf-E8f"/>
+                                <exclude reference="1wo-CD-3E0"/>
+                                <exclude reference="5v6-f6-Q1N"/>
+                                <exclude reference="9MF-nL-ppD"/>
+                                <exclude reference="8N4-ao-a0z"/>
+                                <exclude reference="Ah1-pC-lQc"/>
+                                <exclude reference="WOg-GQ-1bZ"/>
+                                <exclude reference="XcB-EL-Y2R"/>
+                                <exclude reference="f13-07-nkv"/>
+                                <exclude reference="ier-9d-xiw"/>
+                                <exclude reference="rdW-B1-LNR"/>
+                                <exclude reference="1QH-24-N3Y"/>
+                                <exclude reference="QvR-0j-79Z"/>
+                                <exclude reference="Z2J-k7-TwI"/>
+                                <exclude reference="d92-mf-HES"/>
+                                <exclude reference="GM5-rD-Snx"/>
+                                <exclude reference="dEa-Dn-HxF"/>
+                                <exclude reference="jBZ-UL-dir"/>
+                                <exclude reference="zDo-jQ-CK8"/>
+                                <exclude reference="JXo-po-6tp"/>
+                                <exclude reference="aau-26-37D"/>
+                                <exclude reference="kTM-Mp-7gB"/>
+                                <exclude reference="rWU-tc-zJl"/>
+                                <exclude reference="IVn-7u-0cQ"/>
+                                <exclude reference="U3F-K2-gjH"/>
+                                <exclude reference="fqm-2f-BSK"/>
+                                <exclude reference="hQ8-gg-5Xx"/>
+                                <exclude reference="iy1-J4-a2w"/>
+                                <exclude reference="0lG-lU-0Sh"/>
+                                <exclude reference="DOd-bE-Dd1"/>
+                                <exclude reference="YEp-Gc-6HX"/>
+                                <exclude reference="apO-6o-DY3"/>
+                                <exclude reference="srT-au-sXC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="1wo-CD-3E0"/>
+                                <include reference="5v6-f6-Q1N"/>
+                                <include reference="9MF-nL-ppD"/>
+                                <include reference="8N4-ao-a0z"/>
+                                <include reference="XcB-EL-Y2R"/>
+                                <include reference="f13-07-nkv"/>
+                                <include reference="rdW-B1-LNR"/>
+                                <include reference="1QH-24-N3Y"/>
+                                <include reference="QvR-0j-79Z"/>
+                                <include reference="Z2J-k7-TwI"/>
+                                <include reference="d92-mf-HES"/>
+                                <include reference="dEa-Dn-HxF"/>
+                                <include reference="jBZ-UL-dir"/>
+                                <include reference="zDo-jQ-CK8"/>
+                                <include reference="aau-26-37D"/>
+                                <include reference="kTM-Mp-7gB"/>
+                                <include reference="rWU-tc-zJl"/>
+                                <include reference="IVn-7u-0cQ"/>
+                                <include reference="DOd-bE-Dd1"/>
+                                <include reference="YEp-Gc-6HX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="0DY-Sf-E8f"/>
+                                <include reference="Ah1-pC-lQc"/>
+                                <include reference="WOg-GQ-1bZ"/>
+                                <include reference="ier-9d-xiw"/>
+                                <include reference="GM5-rD-Snx"/>
+                                <include reference="JXo-po-6tp"/>
+                                <include reference="U3F-K2-gjH"/>
+                                <include reference="fqm-2f-BSK"/>
+                                <include reference="hQ8-gg-5Xx"/>
+                                <include reference="iy1-J4-a2w"/>
+                                <include reference="0lG-lU-0Sh"/>
+                                <include reference="apO-6o-DY3"/>
+                                <include reference="srT-au-sXC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="EndLabel" destination="6m0-4P-0lY" id="W0x-Bq-fzt"/>
@@ -110,7 +219,7 @@ Mail Pilot</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-773.02325581395348" y="-32.832618025751074"/>
+            <point key="canvasLocation" x="-774.41860465116281" y="-34.120171673819748"/>
         </scene>
     </scenes>
     <resources>

@@ -32,7 +32,11 @@ class GameViewController: UIViewController {
 
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask
     {
-        return .portrait
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            return .allButUpsideDown
+        } else {
+            return .all
+        }
     }
 
     override var prefersStatusBarHidden: Bool {
@@ -83,6 +87,13 @@ class GameViewController: UIViewController {
     
     @IBAction func StartButton_Pressed(_ sender: UIButton)
     {
+        //force landscape mode
+        DispatchQueue.main.async {
+                    //OrientationManager.landscapeSupported = !OrientationManager.landscapeSupported
+                    let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                    windowScene?.requestGeometryUpdate(.iOS(interfaceOrientations:  .landscape ))
+                    self.setNeedsUpdateOfSupportedInterfaceOrientations()
+                }
         ScoreLabel.isHidden = false
         LivesLabel.isHidden = false
         StartLabel.isHidden = true
@@ -97,6 +108,13 @@ class GameViewController: UIViewController {
     
     @IBAction func RestartButton_Pressed(_ sender: UIButton)
     {
+        //force landscape mode
+        DispatchQueue.main.async {
+                    //OrientationManager.landscapeSupported = !OrientationManager.landscapeSupported
+                    let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+                    windowScene?.requestGeometryUpdate(.iOS(interfaceOrientations:  .landscape ))
+                    self.setNeedsUpdateOfSupportedInterfaceOrientations()
+                }
         ScoreLabel.isHidden = false
         LivesLabel.isHidden = false
         RestartButton.isHidden = true
